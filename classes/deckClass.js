@@ -16,6 +16,9 @@ export default class Deck{
         //this returns the entire deck
         return this.cards;
     }
+    emptyDeck(){
+        this.cards = [];
+    }
     deal(){
         //this creates a random number based on the length of the deck
         let rando = getRandomInt(this.cards.length);

@@ -3,6 +3,7 @@ import Character from "./classes/characterClass.js";
 
 const deck = new Deck();
 const prepDeck = ()=>{
+  deck.emptyDeck();
   //create and add kaylin
   const kaylin = new Character("Kaylin the Renegade", "RDI3", "hero");
   deck.addCard(kaylin);
