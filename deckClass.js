@@ -2,7 +2,7 @@ function getRandomInt(max) {
   return Math.floor(Math.random() * max);
 }
 
-class Deck{
+export class Deck{
     constructor(){
         this.cards = [];
     }
@@ -21,3 +21,4 @@ class Deck{
         return card[0];
     }
 };
+
