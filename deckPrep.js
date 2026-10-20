@@ -2,6 +2,7 @@ import Deck from "./classes/deckClass.js";
 import Character from "./classes/characterClass.js";
 
 const deck = new Deck();
+//loads the cards to an empty array stored in deck
 const prepDeck = ()=>{
   deck.emptyDeck();
   //create and add kaylin
