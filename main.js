@@ -86,9 +86,30 @@ deck.addCard(evilPooky);
 //create and add halden
 const halden = new Character("Halden the Unhinged", "allies", "hero");
 deck.addCard(halden);
-//create and add
-
-
+//create and add natyli
+const natyli = new Character("Witchdoctor Natyli", "allies", "hero");
+deck.addCard(natyli);
+//create and add pooky
+const pooky = new Character("Pooky the Vicious", "allies", "hero");
+deck.addCard(pooky);
+//create and add wrench
+const wrench = new Character("Wrench", "allies", "hero");
+deck.addCard(wrench);
+//create and add keet
+const keet = new Character("Keet the Treasure Hunter", "allies", "hero");
+deck.addCard(keet);
+//create and add nitrel
+const nitrel = new Character("Nitrel the Sapper", "allies", "hero");
+deck.addCard(nitrel);
+//create and add adonis
+const adonis = new Character("The Magnificent Adonis, Bard of the Ages", "allies", "hero");
+deck.addCard(adonis);
+//create and add lichKing
+const lichKing = new Character("The Lich King", "allies", "villan");
+deck.addCard(lichKing);
+//create and add ohava
+const ohava = new Character("Ohava the Grand Cleric", "allies", "hero");
+deck.addCard(ohava);
 
 
 
