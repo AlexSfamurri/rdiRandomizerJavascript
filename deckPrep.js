@@ -1,8 +1,8 @@
 import Deck from "./classes/deckClass.js";
 import Character from "./classes/characterClass.js";
 
-export const deck = new Deck();
-export const prepDeck = ()=>{
+const deck = new Deck();
+const prepDeck = ()=>{
   //create and add kaylin
   const kaylin = new Character("Kaylin the Renegade", "RDI3", "hero");
   deck.addCard(kaylin);
@@ -127,7 +127,7 @@ export const prepDeck = ()=>{
 
 prepDeck();
 
-
+export {prepDeck, deck};
 //below is debug code
 // const currentDeck = deck.getDeck();
 // function getRandomInt(max) {
