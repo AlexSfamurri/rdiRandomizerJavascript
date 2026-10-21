@@ -18,7 +18,7 @@ inputEl.addEventListener('input', (event) => {
     const playerCharacterObj = dealCharactersToPlayers(playerCount);
     for(let i = 0; i < playerCount; i++){
         let playerKey = "Player" + Number(i + 1);
-        displayStr += playerKey + " " + playerCharacterObj[playerKey].getName() + " \n \n ";
+        displayStr += " \n \n " + playerKey + " " + playerCharacterObj[playerKey].getName() + " \n \n ";
     }
 
 
