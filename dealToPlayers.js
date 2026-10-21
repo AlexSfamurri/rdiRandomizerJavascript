@@ -4,35 +4,20 @@ import { prepDeck, deck } from "./deckPrep.js";
 const getRandomCharacter = ()=>{
     return deck.deal();
 }
-
+// takes the number of players and deals out characters
 const dealCharactersToPlayers = (numPlayers)=>{
+    //makes sure we are working with a fresh deck
     prepDeck();
+    //creates an empty object to store player key and character value
     const playersPairings = {};
+    //for the number of players
     for(let i = 0; i < numPlayers; i++){
+        //pair playerN with random character
         playersPairings["Player" + Number(i + 1)] = getRandomCharacter();
     }
+    //returns the obj that has playerN keys and randomcharacter values
     return playersPairings;
 }
-
-
-// console.log(dealCharactersToPlayers(4));
-
-// i don't know why i can't pull from the html page going to work on the rest of the logic
-// const inputEl = document.getElementById("playerCountInput");
-// const buttonEl = document.getElementById("submitBtn");
-// const outputEl = document.getElementById("displayCharacters");
-// //get the number of players 
-
-// buttonEl.addEventListener("click", function(){
-//     prepDeck();
-//     console.log("registered a click");
-//     numOfPlayers = Number(inputEl.value);
-//     const playerListOfKeyValuePairs = [];
-//     for(let i = 0; i < numOfPlayers; i++){
-//         playerListOfKeyValuePairs.push({playerOrder: "Player" + i + 1, character: deck.deal()});
-//     }
-//     console.log("First obj is " + playerListOfKeyValuePairs[0]);
-// })
 
 export { dealCharactersToPlayers };
 
