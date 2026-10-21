@@ -12,6 +12,8 @@ const inputEl = document.getElementById(inputIDValue);
 // const buttonEl = document.getElementById(buttonIDValue);
 //grabs the display element that matches its id
 const displayEl = document.getElementById(displayIDValue);
+//keep track of the different optional options being selected
+const filterOptions = [];
 
 //when a number is put into the input
 inputEl.addEventListener('input', (event) => {
@@ -24,7 +26,7 @@ inputEl.addEventListener('input', (event) => {
     // makes sure that the  of playercount was less than or equal to the number of possible characters
     if(playerCount <= deckSize && playerCount > 0){    
         // makes an obj out of the dealCharactersToPlayers function when we pass the number of players
-        const playerCharacterObj = dealCharactersToPlayers(playerCount);
+        const playerCharacterObj = dealCharactersToPlayers(playerCount, filterOptions);
         //for each players
         for(let i = 0; i < playerCount; i++){
             //create the PlayerN key
