@@ -15,13 +15,14 @@ const displayEl = document.getElementById(displayIDValue);
 
 //when a number is put into the input
 inputEl.addEventListener('input', (event) => {
-    
+    let deckSize = deck.getDeck().length;
     //gets the value for the number of players
     let playerCount = Number(event.target.value);
     //empty string to be filled inside the for loop
     let displayStr = "";
+    console.log(deckSize);
     // makes sure that the  of playercount was less than or equal to the number of possible characters
-    if(playerCount <= deck.getDeck().length){    
+    if(playerCount <= deckSize){    
         // makes an obj out of the dealCharactersToPlayers function when we pass the number of players
         const playerCharacterObj = dealCharactersToPlayers(playerCount);
         //for each players

@@ -41,3 +41,4 @@
 | 30 | merge | merge | main |
 | 31 | pulled down from main | pulled down from main | dev |
 | 32 | was adding more to the html and found a bug when the first entry is put | added to html | dev |
+| 33 | deck was not primed until the first attempt happened so primed it before that | primed deck before dealling is attempted | dev |
