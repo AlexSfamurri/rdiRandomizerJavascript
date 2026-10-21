@@ -125,6 +125,24 @@ const prepDeck = ()=>{
   //create and add roxana
   const roxana = new Character("Roxana, Adventurous Chef", "smorgasbox", "hero");
   deck.addCard(roxana);
+  //create and add alaric
+  const alaric = new Character("Trapmaster Alaric", "RDI10", "hero");
+  deck.addCard(alaric);
+  //create and add karl
+  const karl = new Character("Karl Bookhammer", "RDI10", "hero");
+  deck.addCard(karl);
+  //create and add dominique
+  const dominique = new Character("Dominique the Resourceful", "RDI10", "hero");
+  deck.addCard(dominique);
+  //create and add elsinder
+  const elsinder = new Character("Eisinder, the Frozen Flame", "RDI10", "hero");
+  deck.addCard(elsinder);
+  //create and add oozwald
+  const oozwald = new Character("Oozwald, \“Normal\” Adventurer", "RDI10", "hero");
+  deck.addCard(oozwald);
+  //create and add valeria
+  const valeria = new Character("Dark Priestess Valeria", "RDI10", "villain");
+  deck.addCard(valeria);
 }
 
 export { deck };
