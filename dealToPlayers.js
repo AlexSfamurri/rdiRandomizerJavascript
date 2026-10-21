@@ -1,6 +1,7 @@
 import { prepDeck, deck } from "./deckPrep.js";
 //prime the deck
 prepDeck();
+const numOfCharacters = deck.getDeck().length;
 // a function that just returns the result of deck.deal()
 const getRandomCharacter = ()=>{
     return deck.deal();
@@ -20,5 +21,5 @@ const dealCharactersToPlayers = (numPlayers)=>{
     return playersPairings;
 }
 
-export { dealCharactersToPlayers, deck };
+export { dealCharactersToPlayers, numOfCharacters };
 

@@ -42,3 +42,4 @@
 | 31 | pulled down from main | pulled down from main | dev |
 | 32 | was adding more to the html and found a bug when the first entry is put | added to html | dev |
 | 33 | deck was not primed until the first attempt happened so primed it before that | primed deck before dealling is attempted | dev |
+| 34 | instead of passing deck from dealToPlayers to index, i just sent the value of the number of characters (length of the deck) | passing number of characters rather than whole obj | dev |

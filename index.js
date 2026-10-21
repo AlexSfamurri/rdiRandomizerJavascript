@@ -1,4 +1,4 @@
-import { dealCharactersToPlayers, deck } from "./dealToPlayers.js";
+import { dealCharactersToPlayers, numOfCharacters } from "./dealToPlayers.js";
 
 
 // stores the html id value for input
@@ -15,7 +15,7 @@ const displayEl = document.getElementById(displayIDValue);
 
 //when a number is put into the input
 inputEl.addEventListener('input', (event) => {
-    let deckSize = deck.getDeck().length;
+    let deckSize = numOfCharacters;
     //gets the value for the number of players
     let playerCount = Number(event.target.value);
     //empty string to be filled inside the for loop
