@@ -19,5 +19,5 @@ const dealCharactersToPlayers = (numPlayers)=>{
     return playersPairings;
 }
 
-export { dealCharactersToPlayers };
+export { dealCharactersToPlayers, deck };
 
