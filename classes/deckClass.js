@@ -19,6 +19,9 @@ class Deck{
     emptyDeck(){
         this.cards = [];
     }
+    updateWithModifiedDeck(newDeck){
+        this.cards = newDeck;
+    }
     deal(){
         //this creates a random number based on the length of the deck
         let rando = getRandomInt(this.cards.length);
