@@ -14,6 +14,7 @@ const dealCharactersToPlayers = (numPlayers)=>{
     return playersPairings;
 }
 
+
 // console.log(dealCharactersToPlayers(4));
 
 // i don't know why i can't pull from the html page going to work on the rest of the logic
@@ -34,3 +35,4 @@ const dealCharactersToPlayers = (numPlayers)=>{
 // })
 
 export { dealCharactersToPlayers };
+
