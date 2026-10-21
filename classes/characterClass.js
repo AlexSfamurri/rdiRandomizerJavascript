@@ -1,9 +1,9 @@
 class Character{
-    constructor(name, source, villanOrHero){
+    constructor(name, source, villainOrHero){
         //stores the name
         this.name = name;
         this.source = source;
-        this.villanOrHero = villanOrHero;
+        this.villainOrHero = villainOrHero;
         //future plans could add character difficulty
     }
     
@@ -14,8 +14,8 @@ class Character{
     getSource(){
         return this.source;
     }
-    getVillianOrHero(){
-        return this.villanOrHero;
+    getVillainOrHero(){
+        return this.villainOrHero;
     }
 }
 
