@@ -1,5 +1,5 @@
-import Deck from "./classes/deckClass.js";
-import Character from "./classes/characterClass.js";
+import { Deck } from "./classes/deckClass.js";
+import { Character } from "./classes/characterClass.js";
 
 const deck = new Deck();
 //loads the cards to an empty array stored in deck
@@ -129,11 +129,14 @@ const prepDeck = ()=>{
 
 prepDeck();
 
-export {prepDeck, deck};
-//below is debug code
-// const currentDeck = deck.getDeck();
-// function getRandomInt(max) {
-//   return Math.floor(Math.random() * max);
-// }
 
-// console.log("this is a card in the deck " + currentDeck[getRandomInt(currentDeck.length)].name);
+//below is debug code
+const currentDeck = deck.getDeck();
+function getRandomInt(max) {
+  return Math.floor(Math.random() * max);
+}
+
+console.log("this is a card in the deck " + currentDeck[getRandomInt(currentDeck.length)].name);
+
+export { deck };
+export { prepDeck };

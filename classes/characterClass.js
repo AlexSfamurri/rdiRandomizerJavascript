@@ -1,4 +1,4 @@
-export default class Character{
+class Character{
     constructor(name, source, villanOrHero){
         //stores the name
         this.name = name;
@@ -18,3 +18,5 @@ export default class Character{
         return this.villanOrHero;
     }
 }
+
+export { Character };

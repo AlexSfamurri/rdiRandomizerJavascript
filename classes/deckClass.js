@@ -2,7 +2,7 @@ function getRandomInt(max) {
   return Math.floor(Math.random() * max);
 }
 
-export default class Deck{
+class Deck{
     constructor(){
         //this is where the characters will be stored
         this.cards = [];
@@ -29,3 +29,4 @@ export default class Deck{
     }
 };
 
+export { Deck };
