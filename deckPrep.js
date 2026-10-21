@@ -131,12 +131,12 @@ prepDeck();
 
 
 //below is debug code
-const currentDeck = deck.getDeck();
-function getRandomInt(max) {
-  return Math.floor(Math.random() * max);
-}
+// const currentDeck = deck.getDeck();
+// function getRandomInt(max) {
+//   return Math.floor(Math.random() * max);
+// }
 
-console.log("this is a card in the deck " + currentDeck[getRandomInt(currentDeck.length)].name);
+// console.log("this is a card in the deck " + currentDeck[getRandomInt(currentDeck.length)].name);
 
 export { deck };
 export { prepDeck };
