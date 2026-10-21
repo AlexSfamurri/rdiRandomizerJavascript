@@ -15,6 +15,8 @@ const displayEl = document.getElementById(displayIDValue);
 //keep track of the different optional options being selected
 const filterOptions = [];
 
+
+
 //when a number is put into the input
 inputEl.addEventListener('input', (event) => {
     let deckSize = numOfCharacters;

@@ -50,3 +50,4 @@
 | 39 | fixed a niche case for negative or 0 entry | checks to make sure there are more than 0 players | dev |
 | 40 | made a filter to filter characters based on the character obj's attributes | made a filter for characters | dev |
 | 41 | made the checkboxes for the filter but not connected yet | made the checkboxes | dev |
+| 42 | added value attribute to checkboxes | added value attribute to checkboxes | dev |
