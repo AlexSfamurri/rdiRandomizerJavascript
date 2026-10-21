@@ -45,3 +45,4 @@
 | 34 | instead of passing deck from dealToPlayers to index, i just sent the value of the number of characters (length of the deck) | passing number of characters rather than whole obj | dev |
 | 35 | took out function that just returned the result of deck.deal() to limit number of uneeded function calls | took out function and used deck.deal() directly | dev |
 | 36 | trying to make things look better with css | created a css file and folder and algn center | dev |
+| 37 | centered the content so far and made it easier to read with black background and white/read lettering. currently having some font-sizing issues | applied css to center and adjust colors | dev |
