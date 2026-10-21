@@ -22,7 +22,7 @@ inputEl.addEventListener('input', (event) => {
     let displayStr = "";
     console.log(deckSize);
     // makes sure that the  of playercount was less than or equal to the number of possible characters
-    if(playerCount <= deckSize){    
+    if(playerCount <= deckSize && playerCount > 0){    
         // makes an obj out of the dealCharactersToPlayers function when we pass the number of players
         const playerCharacterObj = dealCharactersToPlayers(playerCount);
         //for each players

@@ -47,3 +47,4 @@
 | 36 | trying to make things look better with css | created a css file and folder and algn center | dev |
 | 37 | centered the content so far and made it easier to read with black background and white/read lettering. currently having some font-sizing issues | applied css to center and adjust colors | dev |
 | 38 | solved weird font issue. i forgot to put px | forgot px in font-size | dev |
+| 39 | fixed a niche case for negative or 0 entry | checks to make sure there are more than 0 players | dev |
