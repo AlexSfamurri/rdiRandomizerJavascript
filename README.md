@@ -43,3 +43,4 @@
 | 32 | was adding more to the html and found a bug when the first entry is put | added to html | dev |
 | 33 | deck was not primed until the first attempt happened so primed it before that | primed deck before dealling is attempted | dev |
 | 34 | instead of passing deck from dealToPlayers to index, i just sent the value of the number of characters (length of the deck) | passing number of characters rather than whole obj | dev |
+| 35 | took out function that just returned the result of deck.deal() to limit number of uneeded function calls | took out function and used deck.deal() directly | dev |

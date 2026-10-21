@@ -2,10 +2,7 @@ import { prepDeck, deck } from "./deckPrep.js";
 //prime the deck
 prepDeck();
 const numOfCharacters = deck.getDeck().length;
-// a function that just returns the result of deck.deal()
-const getRandomCharacter = ()=>{
-    return deck.deal();
-}
+
 // takes the number of players and deals out characters
 const dealCharactersToPlayers = (numPlayers)=>{
     //makes sure we are working with a fresh deck
@@ -15,7 +12,7 @@ const dealCharactersToPlayers = (numPlayers)=>{
     //for the number of players
     for(let i = 0; i < numPlayers; i++){
         //pair playerN with random character
-        playersPairings["Player" + Number(i + 1)] = getRandomCharacter();
+        playersPairings["Player" + Number(i + 1)] = deck.deal();
     }
     //returns the obj that has playerN keys and randomcharacter values
     return playersPairings;
