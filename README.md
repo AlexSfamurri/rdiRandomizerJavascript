@@ -38,3 +38,5 @@
 | 27 | merged dev to main | merged dev to main | main |
 | 28 | pulled main into dev | pulled main into dev | dev |
 | 29 | crerated README.md | crerated README.md | dev |
+| 30 | merge | merge | main |
+| 31 | pulled down from main | pulled down from main | dev |
