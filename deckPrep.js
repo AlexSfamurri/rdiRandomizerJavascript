@@ -30,16 +30,16 @@ const prepDeck = ()=>{
   const zakhan = new Character("Zakhan the Drunken Master", "RDI5", "hero");
   deck.addCard(zakhan);
   //create and add amundyr
-  const amundyr = new Character("Amundyr the Cursed", "RDI6", "villan");
+  const amundyr = new Character("Amundyr the Cursed", "RDI6", "villain");
   deck.addCard(amundyr);
   //create and add daareka
-  const daareka = new Character("Daareka the Mindbreaker", "RDI6", "villan");
+  const daareka = new Character("Daareka the Mindbreaker", "RDI6", "villain");
   deck.addCard(daareka);
   //create and add torglesnarf
-  const torglesnarf = new Character("Torglesnarf Duncleton, First of His Name", "RDI6", "villan");
+  const torglesnarf = new Character("Torglesnarf Duncleton, First of His Name", "RDI6", "villain");
   deck.addCard(torglesnarf);
   //create and add vlaslo
-  const vlaslo = new Character("Baron von Vlazlo", "RDI6", "villan");
+  const vlaslo = new Character("Baron von Vlazlo", "RDI6", "villain");
   deck.addCard(vlaslo);
   //create and add jasper
   const jasper = new Character("Jasper the Bouncer", "RDI7", "hero");
@@ -75,7 +75,7 @@ const prepDeck = ()=>{
   const jett = new Character("Jett the Courier", "RDI9", "hero");
   deck.addCard(jett);
   //create and add petra
-  const petra = new Character("Petra the Devious", "RDI9", "villan");
+  const petra = new Character("Petra the Devious", "RDI9", "villain");
   deck.addCard(petra);
   //create and add terci
   const terci = new Character("Doctor Terci", "RDI9", "hero");
@@ -84,7 +84,7 @@ const prepDeck = ()=>{
   const ygella = new Character("Beastsergeant Ygella", "RDI9", "hero");
   deck.addCard(ygella);
   //create and add evilPooky
-  const evilPooky = new Character("Evil Pooky", "allies", "villan");
+  const evilPooky = new Character("Evil Pooky", "allies", "villain");
   deck.addCard(evilPooky);
   //create and add halden
   const halden = new Character("Halden the Unhinged", "allies", "hero");
@@ -108,19 +108,19 @@ const prepDeck = ()=>{
   const adonis = new Character("The Magnificent Adonis, Bard of the Ages", "allies", "hero");
   deck.addCard(adonis);
   //create and add lichKing
-  const lichKing = new Character("The Lich King", "allies", "villan");
+  const lichKing = new Character("The Lich King", "allies", "villain");
   deck.addCard(lichKing);
   //create and add ohava
   const ohava = new Character("Ohava the Grand Cleric", "allies", "hero");
   deck.addCard(ohava);
   //create and add murgath
-  const murgath = new Character("Murgath the Blessed", "allies", "villan");
+  const murgath = new Character("Murgath the Blessed", "allies", "villain");
   deck.addCard(murgath);
   //create and add piper
   const piper = new Character("Piper, Eagle-Eyed Sniper", "allies", "hero");
   deck.addCard(piper);
   //create and add ripsnarl
-  const ripsnarl = new Character("Ripsnarl, Bad Dog", "allies", "villan");
+  const ripsnarl = new Character("Ripsnarl, Bad Dog", "allies", "villain");
   deck.addCard(ripsnarl);
   //create and add roxana
   const roxana = new Character("Roxana, Adventurous Chef", "smorgasbox", "hero");
