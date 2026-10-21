@@ -27,7 +27,7 @@ inputEl.addEventListener('input', (event) => {
         //create the PlayerN key
         let playerKey = "Player" + Number(i + 1);
         //adds the playerkey as well as the name of the character
-        displayStr += " \n \n " + playerKey + " " + playerCharacterObj[playerKey].getName() + " \n \n ";
+        displayStr += "\n \n | " + playerKey + " " + playerCharacterObj[playerKey].getName() + " | \n \n ";
     }
 
 
