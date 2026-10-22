@@ -51,3 +51,4 @@
 | 40 | made a filter to filter characters based on the character obj's attributes | made a filter for characters | dev |
 | 41 | made the checkboxes for the filter but not connected yet | made the checkboxes | dev |
 | 42 | added value attribute to checkboxes | added value attribute to checkboxes | dev |
+| 43 | fixed a bug that filtered everything away | fixed a filter bug | dev |

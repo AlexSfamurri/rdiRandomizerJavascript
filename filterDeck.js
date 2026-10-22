@@ -3,6 +3,7 @@
 const filterDeck = (deck, filterChoices = [])=>{
     //gets the current deck
     const deckOfCharacters = deck.getDeck();
+    console.log(deckOfCharacters[0])
     //gets the number of choices selected
     const numOfChoices = filterChoices.length;
     // gets the length of the deck of characters
@@ -10,7 +11,7 @@ const filterDeck = (deck, filterChoices = [])=>{
     //creates an empty array to be used as the new modified deck
     const newDeck = [];
     //makes sure there is at least one choice to filter
-    if(numOfChoices < 1){
+    if(!numOfChoices < 1){
         //for each choice
         for(let i = 0; i < numOfChoices; i++){
             //and for each character

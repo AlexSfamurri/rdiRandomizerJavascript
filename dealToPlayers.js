@@ -12,7 +12,7 @@ const dealCharactersToPlayers = (numPlayers, filterChoices)=>{
 
     //this takes the filter options and applies them to the deck
     filterDeck(deck, filterChoices);
-
+    // console.log(deck.getDeck()[0])
     //creates an empty object to store player key and character value
     const playersPairings = {};
     //for the number of players
