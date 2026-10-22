@@ -53,3 +53,5 @@
 | 42 | added value attribute to checkboxes | added value attribute to checkboxes | dev |
 | 43 | fixed a bug that filtered everything away | fixed a filter bug | dev |
 | 44 | added the check box interaction for filtering and found a bug where characters are repeating somehow | checkboxes connected to code | dev |
+| 45 | for some reason between each run the deck doubles in size even when i show the deck being emptied | struggle is real deck bug | dev |
+| 46 | isolated the issue to filterDeck.js will need to fix the logic there | isolated issue to filetDeck.js | dev |
