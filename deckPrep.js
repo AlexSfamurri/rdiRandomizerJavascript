@@ -123,7 +123,7 @@ const prepDeck = ()=>{
   const ripsnarl = new Character("Ripsnarl, Bad Dog", "allies", "villain");
   deck.addCard(ripsnarl);
   //create and add roxana
-  const roxana = new Character("Roxana, Adventurous Chef", "", "hero");
+  const roxana = new Character("Roxana, Adventurous Chef", "smorgasbox", "hero");
   deck.addCard(roxana);
   //create and add alaric
   const alaric = new Character("Trapmaster Alaric", "rdi10", "hero");

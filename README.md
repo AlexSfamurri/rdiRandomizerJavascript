@@ -52,3 +52,4 @@
 | 41 | made the checkboxes for the filter but not connected yet | made the checkboxes | dev |
 | 42 | added value attribute to checkboxes | added value attribute to checkboxes | dev |
 | 43 | fixed a bug that filtered everything away | fixed a filter bug | dev |
+| 44 | added the check box interaction for filtering and found a bug where characters are repeating somehow | checkboxes connected to code | dev |

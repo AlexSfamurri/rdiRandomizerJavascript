@@ -1,6 +1,7 @@
-
+import { prepDeck } from "./deckPrep.js"
 // takes the deck and an array of filter choices
 const filterDeck = (deck, filterChoices = [])=>{
+    prepDeck();
     //gets the current deck
     const deckOfCharacters = deck.getDeck();
     console.log(deckOfCharacters[0])
@@ -25,8 +26,9 @@ const filterDeck = (deck, filterChoices = [])=>{
             }
         }
         //update deck with the new deck
-        deck.updateWithModifiedDeck(newDeck);
+        return newDeck;
     }
+    return deckOfCharacters;
     
 
 }

@@ -11,7 +11,7 @@ const dealCharactersToPlayers = (numPlayers, filterChoices)=>{
     prepDeck();
 
     //this takes the filter options and applies them to the deck
-    filterDeck(deck, filterChoices);
+    deck.updateWithModifiedDeck(filterDeck(deck, filterChoices));
     // console.log(deck.getDeck()[0])
     //creates an empty object to store player key and character value
     const playersPairings = {};
