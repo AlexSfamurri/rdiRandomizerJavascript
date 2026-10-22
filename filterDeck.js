@@ -23,7 +23,8 @@ const filterDeck = (deck, filterChoices = [])=>{
         //for each choice
         for(let i = 0; i < numOfChoices; i++){
             //and for each character
-            for(let j = 0; j < numOfCharacters; j++){
+            for(let j = 0; j < deck.getDeck().length; j++){
+                console.log(deck.getDeck()[j].getSource())
                 // if this choice's name or source or villain is equal to this currecnt character
                 if(deck.getDeck()[j].getSource() === filterChoices[i] || deck.getDeck()[j].getVillainOrHero() === filterChoices[i]){
                     //add that character to the new deck

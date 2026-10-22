@@ -56,3 +56,4 @@
 | 45 | for some reason between each run the deck doubles in size even when i show the deck being emptied | struggle is real deck bug | dev |
 | 46 | isolated the issue to filterDeck.js will need to fix the logic there | isolated issue to filetDeck.js | dev |
 | 47 | made some changes across the board. cleaned up some panic attempts to fix and changed how filter works and added a specific card deal mechanic in the deck class | added dealSpecific to deck class | dev |
+| 48 | working backwards i appear to have fixed the doubling deck size issue filter caused | fixed filterDeck | dev |

@@ -11,7 +11,7 @@ const dealCharactersToPlayers = (numPlayers, filterChoices)=>{
     prepDeck();
 
     //this takes the filter options and applies them to the deck
-    // deck.updateWithModifiedDeck(filterDeck(deck, filterChoices));
+    deck.updateWithModifiedDeck(filterDeck(deck, filterChoices));
     
     numOfCharacters = deck.getDeck().length;
     // console.log(deck.getDeck()[0])
