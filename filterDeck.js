@@ -1,6 +1,7 @@
 import { prepDeck } from "./deckPrep.js"
 // takes the deck and an array of filter choices
 const filterDeck = (deck, filterChoices = [])=>{
+    deck.emptyDeck();
     prepDeck();
     //gets the current deck
     const deckOfCharacters = deck.getDeck();

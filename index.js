@@ -1,4 +1,4 @@
-import { dealCharactersToPlayers, numOfCharacters } from "./dealToPlayers.js";
+import { dealCharactersToPlayers, numOfCharacters, deck } from "./dealToPlayers.js";
 
 
 // stores the html id value for input
@@ -112,5 +112,6 @@ inputEl.addEventListener('input', (event) => {
 
 
     displayEl.textContent = displayStr;
-
+    deck.emptyDeck();
+    console.log(deck.getDeck().length)
 });

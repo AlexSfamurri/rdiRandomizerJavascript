@@ -3,15 +3,18 @@ import { filterDeck } from "./filterDeck.js"
 //prime the deck
 prepDeck();
 
-const numOfCharacters = deck.getDeck().length;
+let numOfCharacters = deck.getDeck().length;
 
 // takes the number of players and deals out characters
 const dealCharactersToPlayers = (numPlayers, filterChoices)=>{
+    deck.emptyDeck();
     //makes sure we are working with a fresh deck
     prepDeck();
 
     //this takes the filter options and applies them to the deck
     deck.updateWithModifiedDeck(filterDeck(deck, filterChoices));
+    
+    numOfCharacters = deck.getDeck().length;
     // console.log(deck.getDeck()[0])
     //creates an empty object to store player key and character value
     const playersPairings = {};
@@ -20,9 +23,10 @@ const dealCharactersToPlayers = (numPlayers, filterChoices)=>{
         //pair playerN with random character
         playersPairings["Player" + Number(i + 1)] = deck.deal();
     }
+    deck.emptyDeck();
     //returns the obj that has playerN keys and randomcharacter values
     return playersPairings;
 }
 
-export { dealCharactersToPlayers, numOfCharacters };
+export { dealCharactersToPlayers, numOfCharacters, deck };
 
