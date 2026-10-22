@@ -34,6 +34,10 @@ class Deck{
         //returns the random character
         return card[0];
     }
+    dealSpecific(index){
+        let card = this.cards.splice(index, 1);
+        return card;
+    }
 };
 
 export { Deck };

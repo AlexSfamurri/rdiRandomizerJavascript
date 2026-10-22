@@ -7,7 +7,6 @@ let numOfCharacters = deck.getDeck().length;
 
 // takes the number of players and deals out characters
 const dealCharactersToPlayers = (numPlayers, filterChoices)=>{
-    deck.emptyDeck();
     //makes sure we are working with a fresh deck
     prepDeck();
 
