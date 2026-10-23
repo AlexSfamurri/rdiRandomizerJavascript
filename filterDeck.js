@@ -12,8 +12,6 @@ const filterDeck = (deck, filterChoices = [])=>{
     console.log(deck.getDeck().length + " is the number of characters currently in the deck at the beginning of filterDeck");
     console.log(filterChoices.length + " is the number of filter choices");
     
-    // gets the length of the deck of characters
-    let numOfCharacters = deck.getDeck().length;
     
     //makes sure there is at least one choice to filter
     if(!numOfChoices < 1){
@@ -24,7 +22,7 @@ const filterDeck = (deck, filterChoices = [])=>{
         for(let i = 0; i < numOfChoices; i++){
             //and for each character
             for(let j = 0; j < deck.getDeck().length; j++){
-                console.log(deck.getDeck()[j].getSource())
+                // console.log(deck.getDeck()[j].getSource())
                 // if this choice's name or source or villain is equal to this currecnt character
                 if(deck.getDeck()[j].getSource() === filterChoices[i] || deck.getDeck()[j].getVillainOrHero() === filterChoices[i]){
                     //add that character to the new deck

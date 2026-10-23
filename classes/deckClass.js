@@ -36,7 +36,7 @@ class Deck{
     }
     dealSpecific(index){
         let card = this.cards.splice(index, 1);
-        return card;
+        return card[0];
     }
 };
 

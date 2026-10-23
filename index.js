@@ -104,7 +104,7 @@ inputEl.addEventListener('input', (event) => {
             // console.log(playerCharacterObj[playerKey][0])
             // console.log(playerKey)
             //adds the playerkey as well as the name of the character
-            displayStr += "\n \n | " + playerKey + " " + playerCharacterObj[playerKey][0].getName() + " | \n \n ";
+            displayStr += "\n \n | " + playerKey + " " + playerCharacterObj[playerKey].getName() + " | \n \n ";
         }
     }else{
         displayStr = "Invalid entry";
