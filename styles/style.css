@@ -15,3 +15,12 @@ h1 {
     text-align: center;
     color: red;
 }
+#filterOptions {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+}
+#sources {
+    flex-wrap: wrap;
+    justify-items: center;
+}
