@@ -71,3 +71,4 @@ Red Dragon Inn is a copyright of SlugFest Games West, LLC and as well as their c
 | 55 | merged | merged | main |
 | 56 | updated README to include optional filter | updated README | dev |
 | 57 | remembered i should mention that Slugfest are the creators of this wonderful game | mentioned copyright | dev |
+| 58 | merged | merged | main |
