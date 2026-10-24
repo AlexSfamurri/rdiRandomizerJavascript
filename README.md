@@ -60,3 +60,4 @@
 | 49 | so now when trying to filter by sources, we are only getting half of the results | still bugs in filter | dev |
 | 50 | new bug now that gives me two from the right rdi and two from the next rdi | bugs still in filter | dev |
 | 51 | appear to have fixed the bug. went back and changed how specific cards are dealt. no longer messing with the original deck in this case | fixed filter bug so far | dev |
+| 52 | test for bug, did not find same bug | squashed filter logic bug | dev |

@@ -145,5 +145,5 @@ const prepDeck = ()=>{
   deck.addCard(valeria);
 }
 
-export { deck };
-export { prepDeck };
+
+export { prepDeck, deck };
