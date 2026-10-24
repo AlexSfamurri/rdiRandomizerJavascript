@@ -1,0 +1,17 @@
+body {
+    color: white;
+    background-color: black;
+}
+#inputArea {
+    text-align: center;;
+}
+#displayArea {
+    text-align: center;
+}
+#displayCharacters{
+    font-size: 21px;
+}
+h1 {
+    text-align: center;
+    color: red;
+}

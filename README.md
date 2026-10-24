@@ -38,3 +38,26 @@
 | 27 | merged dev to main | merged dev to main | main |
 | 28 | pulled main into dev | pulled main into dev | dev |
 | 29 | crerated README.md | crerated README.md | dev |
+| 30 | merge | merge | main |
+| 31 | pulled down from main | pulled down from main | dev |
+| 32 | was adding more to the html and found a bug when the first entry is put | added to html | dev |
+| 33 | deck was not primed until the first attempt happened so primed it before that | primed deck before dealling is attempted | dev |
+| 34 | instead of passing deck from dealToPlayers to index, i just sent the value of the number of characters (length of the deck) | passing number of characters rather than whole obj | dev |
+| 35 | took out function that just returned the result of deck.deal() to limit number of uneeded function calls | took out function and used deck.deal() directly | dev |
+| 36 | trying to make things look better with css | created a css file and folder and algn center | dev |
+| 37 | centered the content so far and made it easier to read with black background and white/read lettering. currently having some font-sizing issues | applied css to center and adjust colors | dev |
+| 38 | solved weird font issue. i forgot to put px | forgot px in font-size | dev |
+| 39 | fixed a niche case for negative or 0 entry | checks to make sure there are more than 0 players | dev |
+| 40 | made a filter to filter characters based on the character obj's attributes | made a filter for characters | dev |
+| 41 | made the checkboxes for the filter but not connected yet | made the checkboxes | dev |
+| 42 | added value attribute to checkboxes | added value attribute to checkboxes | dev |
+| 43 | fixed a bug that filtered everything away | fixed a filter bug | dev |
+| 44 | added the check box interaction for filtering and found a bug where characters are repeating somehow | checkboxes connected to code | dev |
+| 45 | for some reason between each run the deck doubles in size even when i show the deck being emptied | struggle is real deck bug | dev |
+| 46 | isolated the issue to filterDeck.js will need to fix the logic there | isolated issue to filetDeck.js | dev |
+| 47 | made some changes across the board. cleaned up some panic attempts to fix and changed how filter works and added a specific card deal mechanic in the deck class | added dealSpecific to deck class | dev |
+| 48 | working backwards i appear to have fixed the doubling deck size issue filter caused | fixed filterDeck | dev |
+| 49 | so now when trying to filter by sources, we are only getting half of the results | still bugs in filter | dev |
+| 50 | new bug now that gives me two from the right rdi and two from the next rdi | bugs still in filter | dev |
+| 51 | appear to have fixed the bug. went back and changed how specific cards are dealt. no longer messing with the original deck in this case | fixed filter bug so far | dev |
+| 52 | test for bug, did not find same bug | squashed filter logic bug | dev |
