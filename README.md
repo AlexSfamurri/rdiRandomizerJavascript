@@ -5,6 +5,7 @@
 * based on that number, deals out that many characters randomly
 * assigned each character obj to a PlayerN key in a js obj
 * transforms that data into a string that is then displayed
+* optionally, user can check the checkboxes that can filter based on hero, villian, and source.
 
 ## ACP log
 | # | What I changed | Commit message | Branch |
@@ -64,3 +65,4 @@
 | 53 | merged | merged | main |
 | 54 | fixed relative path | fixed relative path | dev |
 | 55 | merged | merged | main |
+| 56 | updated README to include optional filter | updated README | dev |
