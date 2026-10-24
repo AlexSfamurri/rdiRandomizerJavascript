@@ -58,3 +58,4 @@
 | 47 | made some changes across the board. cleaned up some panic attempts to fix and changed how filter works and added a specific card deal mechanic in the deck class | added dealSpecific to deck class | dev |
 | 48 | working backwards i appear to have fixed the doubling deck size issue filter caused | fixed filterDeck | dev |
 | 49 | so now when trying to filter by sources, we are only getting half of the results | still bugs in filter | dev |
+| 50 | new bug now that gives me two from the right rdi and two from the next rdi | bugs still in filter | dev |

@@ -101,8 +101,6 @@ inputEl.addEventListener('input', (event) => {
         for(let i = 0; i < playerCount; i++){
             //create the PlayerN key
             let playerKey = "Player" + Number(i + 1);
-            // console.log(playerCharacterObj[playerKey][0])
-            // console.log(playerKey)
             //adds the playerkey as well as the name of the character
             displayStr += "\n \n | " + playerKey + " " + playerCharacterObj[playerKey].getName() + " | \n \n ";
         }
@@ -113,6 +111,7 @@ inputEl.addEventListener('input', (event) => {
 
 
     displayEl.textContent = displayStr;
+
+    //not sure if this call is truely necessary, will need to check later
     deck.emptyDeck();
-    console.log(deck.getDeck().length)
 });
