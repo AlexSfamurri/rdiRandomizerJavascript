@@ -22,5 +22,10 @@ h1 {
 }
 #sources {
     flex-wrap: wrap;
-    justify-items: center;
+    justify-content: stretch;
+}
+#board {
+    flex-wrap: wrap;
+    /* justify-items: space-evenly; */
+    align-items: space-evenly;
 }
