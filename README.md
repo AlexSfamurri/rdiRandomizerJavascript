@@ -73,3 +73,4 @@ Red Dragon Inn is a copyright of SlugFest Games West, LLC and as well as their c
 | 57 | remembered i should mention that Slugfest are the creators of this wonderful game | mentioned copyright | dev |
 | 58 | merged | merged | main |
 | 59 | trying to get the checkboxes to line up the way i want | css safety commit | dev |
+| 60 | added an attribute for if the character has a boss deck | added hasBossDeck attribute | dev |

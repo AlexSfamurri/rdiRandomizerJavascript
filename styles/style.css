@@ -17,15 +17,16 @@ h1 {
 }
 #filterOptions {
     display: flex;
-    flex-wrap: wrap;
+    flex-flow: row wrap;
     justify-content:space-evenly;
 }
 #sources {
-    flex-wrap: wrap;
-    justify-content: stretch;
+    flex-flow: row wrap;
+    /* justify-content: stretch; */
+    /* align-items: center; */
 }
 #board {
-    flex-wrap: wrap;
-    /* justify-items: space-evenly; */
-    align-items: space-evenly;
+    /* flex-wrap: wrap; */
+    justify-items: space-evenly;
+    /* align-items: space-evenly; */
 }
