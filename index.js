@@ -36,11 +36,12 @@ const allies = document.getElementById("allies");
 const smorgasbox = document.getElementById("smorgasbox");
 
 //keep track of the different optional options being selected
-const filterOptions = [];
+
 
 
 //when a number is put into the input
 inputEl.addEventListener('input', (event) => {
+    const filterOptions = [];
     
     if(hero.checked){
         filterOptions.push("hero");

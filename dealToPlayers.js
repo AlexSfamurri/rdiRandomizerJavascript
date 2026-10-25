@@ -1,15 +1,16 @@
 import { prepDeck, deck } from "./deckPrep.js";
 import { filterDeck } from "./filterDeck.js"
+import { bossMode } from "./bossBattleDeal.js";
 //prime the deck
 prepDeck();
 
 let numOfCharacters = deck.getDeck().length;
 
 // takes the number of players and deals out characters
-const dealCharactersToPlayers = (numPlayers, filterChoices)=>{
+const dealCharactersToPlayers = (numPlayers, filterChoices=[])=>{
     //makes sure we are working with a fresh deck
     prepDeck();
-
+    const bossDeck = bossMode(deck);
     //this takes the filter options and applies them to the deck
     deck.updateWithModifiedDeck(filterDeck(deck, filterChoices));
     
