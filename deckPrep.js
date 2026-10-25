@@ -108,19 +108,19 @@ const prepDeck = ()=>{
   const adonis = new Character("The Magnificent Adonis, Bard of the Ages", "allies", "hero");
   deck.addCard(adonis);
   //create and add lichKing
-  const lichKing = new Character("The Lich King", "allies", "villain");
+  const lichKing = new Character("The Lich King", "allies", "villain", true);
   deck.addCard(lichKing);
   //create and add ohava
   const ohava = new Character("Ohava the Grand Cleric", "allies", "hero");
   deck.addCard(ohava);
   //create and add murgath
-  const murgath = new Character("Murgath the Blessed", "allies", "villain");
+  const murgath = new Character("Murgath the Blessed", "allies", "villain", true);
   deck.addCard(murgath);
   //create and add piper
   const piper = new Character("Piper, Eagle-Eyed Sniper", "allies", "hero");
   deck.addCard(piper);
   //create and add ripsnarl
-  const ripsnarl = new Character("Ripsnarl, Bad Dog", "allies", "villain");
+  const ripsnarl = new Character("Ripsnarl, Bad Dog", "allies", "villain", true);
   deck.addCard(ripsnarl);
   //create and add roxana
   const roxana = new Character("Roxana, Adventurous Chef", "smorgasbox", "hero");
@@ -141,7 +141,7 @@ const prepDeck = ()=>{
   const oozwald = new Character("Oozwald, \“Normal\” Adventurer", "rdi10", "hero");
   deck.addCard(oozwald);
   //create and add valeria
-  const valeria = new Character("Dark Priestess Valeria", "rdi10", "villain");
+  const valeria = new Character("Dark Priestess Valeria", "rdi10", "villain", true);
   deck.addCard(valeria);
 }
 

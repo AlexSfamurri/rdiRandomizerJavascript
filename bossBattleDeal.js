@@ -1,10 +1,13 @@
+import { Deck } from "./classes/deckClass.js";
+
 
 const bossMode = (deck)=>{
-    const bossDeck = [];
+    const bossDeck = new Deck();
 
     deck.getDeck().forEach((characterCard)=>{
         if(characterCard.getBossDeckBool()){
-            bossDeck.push(characterCard);
+            // console.log(characterCard)
+            bossDeck.addCard(characterCard);
         }
     })
 
