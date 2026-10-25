@@ -9,7 +9,7 @@ const bossMode = (deck)=>{
             // console.log(characterCard)
             bossDeck.addCard(characterCard);
         }
-    })
+    });
 
     return bossDeck;
 }

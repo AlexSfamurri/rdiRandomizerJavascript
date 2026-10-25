@@ -76,3 +76,4 @@ Red Dragon Inn is a copyright of SlugFest Games West, LLC and as well as their c
 | 60 | added an attribute for if the character has a boss deck | added hasBossDeck attribute | dev |
 | 61 | found another filter bug. filteroptions array needs to be refreshed | need to refreshfilteroptions array | dev |
 | 62 | made and tested boss mode character dealt modification | boss mode | dev |
+| 63 | tinkering around trying to fix checkboxes placement | safety commit | dev |

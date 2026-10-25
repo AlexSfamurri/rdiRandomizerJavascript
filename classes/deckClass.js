@@ -24,7 +24,7 @@ class Deck{
         this.cards = newDeck;
     }
     deal(){
-        console.log("deck size before dealing " + this.cards.length)
+        // console.log("deck size before dealing " + this.cards.length)
         //this creates a random number based on the length of the deck
         let rando = getRandomInt(this.cards.length);
         //this pulls a random card from the deck and removes that chaacter from the deck
