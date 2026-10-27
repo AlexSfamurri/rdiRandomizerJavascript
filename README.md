@@ -77,3 +77,4 @@ Red Dragon Inn is a copyright of SlugFest Games West, LLC and as well as their c
 | 61 | found another filter bug. filteroptions array needs to be refreshed | need to refreshfilteroptions array | dev |
 | 62 | made and tested boss mode character dealt modification | boss mode | dev |
 | 63 | tinkering around trying to fix checkboxes placement | safety commit | dev |
+| 64 | went to replicate the refresh bug and it appears to be resolved, i did move declarations so that could have fixed it | bug squashed | dev |
