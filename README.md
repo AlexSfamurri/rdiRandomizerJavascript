@@ -78,3 +78,4 @@ Red Dragon Inn is a copyright of SlugFest Games West, LLC and as well as their c
 | 62 | made and tested boss mode character dealt modification | boss mode | dev |
 | 63 | tinkering around trying to fix checkboxes placement | safety commit | dev |
 | 64 | went to replicate the refresh bug and it appears to be resolved, i did move declarations so that could have fixed it | bug squashed | dev |
+| 65 | chris helped me with the css. flex is not always the answer | css coming together | dev |
