@@ -101,12 +101,19 @@ inputEl.addEventListener('input', (event) => {
     if(playerCount <= deckSize && playerCount > 0){    
         // makes an obj out of the dealCharactersToPlayers function when we pass the number of players
         const playerCharacterObj = dealCharactersToPlayers(playerCount, filterOptions, bossModeBool);
+        let bossMarked = false;
         //for each players
         for(let i = 0; i < playerCount; i++){
             //create the PlayerN key
             let playerKey = "Player" + Number(i + 1);
-            //adds the playerkey as well as the name of the character
-            displayStr += "\n \n | " + playerKey + " " + playerCharacterObj[playerKey].getName() + " | \n \n ";
+            if(bossModeBool && !bossMarked && playerCharacterObj[playerKey].getBossDeckBool()){
+                bossMarked = true;
+                displayStr += "\n \n | " + playerKey + " " + playerCharacterObj[playerKey].getName() + " BOSS | \n \n ";
+            }else{
+                //adds the playerkey as well as the name of the character
+                displayStr += "\n \n | " + playerKey + " " + playerCharacterObj[playerKey].getName() + " | \n \n ";
+            }
+            
         }
     }else{
         displayStr = "Invalid entry";
