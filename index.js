@@ -44,9 +44,16 @@ inputEl.addEventListener('input', (event) => {
     //smorgasbox checkbox
     const smorgasbox = document.getElementById("smorgasbox");
 
+    const bossMode = document.getElementById("bossMode");
+    
     const filterOptions = [];
 
-    let bossModeBool = true;
+    let bossModeBool = false;
+
+    if(bossMode.checked){
+        bossModeBool = true;
+    }
+    
 
     if(hero.checked){
         filterOptions.push("hero");
@@ -108,11 +115,11 @@ inputEl.addEventListener('input', (event) => {
         for(let i = 0; i < playerCount; i++){
             //create the PlayerN key
             let playerKey = "Player" + Number(i + 1);
-            console.log(playerCharacterObj.bossKey)
+            // console.log(playerCharacterObj.bossKey)
             if(bossModeBool && !bossMarked && playerKey === playerCharacterObj.bossKey){
                 
                 bossMarked = true;
-                displayStr += "\n \n | " + playerKey + " " + playerCharacterObj[playerKey].getName() + " BOSS | \n \n ";
+                displayStr += "\n \n | BOSS " + playerKey + " " + playerCharacterObj[playerKey].getName() + " BOSS | \n \n ";
             }else{
                 //adds the playerkey as well as the name of the character
                 displayStr += "\n \n | " + playerKey + " " + playerCharacterObj[playerKey].getName() + " | \n \n ";

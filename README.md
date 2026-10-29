@@ -82,3 +82,4 @@ Red Dragon Inn is a copyright of SlugFest Games West, LLC and as well as their c
 | 66 | main merged | main merged | main |
 | 67 | beginning implementation of boss mode. added an if else statement to check if boss mode needs to be implemented for creating display str | updated display str logic | dev |
 | 68 | found bug where player key for boss was soemtimes player0 which is invalid | fixed player0 bug | dev |
+| 69 | boss mode implemented | boss mode implemented | dev |
