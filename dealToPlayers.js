@@ -33,8 +33,10 @@ const dealCharactersToPlayers = (numPlayers, filterChoices=[], bossBattleMode = 
     
 
     if(bossBattleMode){
-        let randomKey = "Player" + Number(getRandomInt(numPlayers));
+        let randomKey = "Player" + Number(getRandomInt(numPlayers) + 1);
+        // console.log(randomKey);
         playersPairings[randomKey] = bossDeck.deal();
+        playersPairings.bossKey = randomKey;
     }
 
     return playersPairings;
