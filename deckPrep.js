@@ -2,9 +2,11 @@ import { Deck } from "./classes/deckClass.js";
 import { Character } from "./classes/characterClass.js";
 
 const deck = new Deck();
+const ottoDeck = new Deck();
 //loads the cards to an empty array stored in deck
 const prepDeck = ()=>{
   deck.emptyDeck();
+  ottoDeck.emptyDeck();
   //create and add kaylin
   const kaylin = new Character("Kaylin the Renegade", "rdi3", "hero");
   deck.addCard(kaylin);
@@ -143,7 +145,27 @@ const prepDeck = ()=>{
   //create and add valeria
   const valeria = new Character("Dark Priestess Valeria", "rdi10", "villain", true);
   deck.addCard(valeria);
+
+  //otto deck prep
+  //Bard, Witchdoctor, Tinkerer, Paladin, Berserker, Spelunker
+  const bardOtto = new Character("Bard", "otto", "hero");
+  ottoDeck.addCard(bardOtto);
+
+  const witchDoctorOtto = new Character("Witchdoctor", "otto", "hero");
+  ottoDeck.addCard(witchDoctorOtto);
+
+  const tinkererOtto = new Character("Tinkerer", "otto", "hero");
+  ottoDeck.addCard(tinkererOtto);
+
+  const paladinOtto = new Character("Paladin", "otto", "hero");
+  ottoDeck.addCard(paladinOtto);
+
+  const berserkerOtto = new Character("Berserker", "otto", "hero");
+  ottoDeck.addCard(berserkerOtto);
+
+  const spelunkerOtto = new Character("Spelunker", "otto", "hero");
+  ottoDeck.addCard(spelunkerOtto);
 }
 
 
-export { prepDeck, deck };
+export { prepDeck, deck, ottoDeck };
