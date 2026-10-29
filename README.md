@@ -85,3 +85,4 @@ Red Dragon Inn is a copyright of SlugFest Games West, LLC and as well as their c
 | 69 | boss mode implemented | boss mode implemented | dev |
 | 70 | created otto's ottoDeck | created otto's ottoDeck | dev |
 | 71 | implemented otto's deck to deal to player obj list | otto logic created and tested | dev |
+| 72 | added checkbox for otto and connected it to the js | otto checkbox connected | dev |

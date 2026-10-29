@@ -45,11 +45,17 @@ inputEl.addEventListener('input', (event) => {
 
     const bossMode = document.getElementById("bossMode");
     
+    const ottoMode = document.getElementById("ottoMode");
+
     const filterOptions = [];
 
     let bossModeBool = false;
 
     let ottoModeBool = false;
+
+    if(ottoMode.checked){
+        ottoModeBool = true;
+    }
 
     if(bossMode.checked){
         bossModeBool = true;
