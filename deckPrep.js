@@ -30,16 +30,16 @@ const prepDeck = ()=>{
   const zakhan = new Character("Zakhan the Drunken Master", "rdi5", "hero");
   deck.addCard(zakhan);
   //create and add amundyr
-  const amundyr = new Character("Amundyr the Cursed", "rdi6", "villain");
+  const amundyr = new Character("Amundyr the Cursed", "rdi6", "villain", true);
   deck.addCard(amundyr);
   //create and add daareka
-  const daareka = new Character("Daareka the Mindbreaker", "rdi6", "villain");
+  const daareka = new Character("Daareka the Mindbreaker", "rdi6", "villain", true);
   deck.addCard(daareka);
   //create and add torglesnarf
-  const torglesnarf = new Character("Torglesnarf Duncleton, First of His Name", "rdi6", "villain");
+  const torglesnarf = new Character("Torglesnarf Duncleton, First of His Name", "rdi6", "villain", true);
   deck.addCard(torglesnarf);
   //create and add vlaslo
-  const vlaslo = new Character("Baron von Vlazlo", "rdi6", "villain");
+  const vlaslo = new Character("Baron von Vlazlo", "rdi6", "villain", true);
   deck.addCard(vlaslo);
   //create and add jasper
   const jasper = new Character("Jasper the Bouncer", "rdi7", "hero");
@@ -60,7 +60,7 @@ const prepDeck = ()=>{
   const lucky = new Character("Lucky the Scofflaw", "rdi8", "hero");
   deck.addCard(lucky);
   //create and add nerodia
-  const nerodia = new Character("Nerodia the Petrifier", "rdi8", "villian");
+  const nerodia = new Character("Nerodia the Petrifier", "rdi8", "villian", true);
   deck.addCard(nerodia);
   //create and add phyll
   const phyll = new Character("Phyll Startusk", "rdi8", "hero");
@@ -75,7 +75,7 @@ const prepDeck = ()=>{
   const jett = new Character("Jett the Courier", "rdi9", "hero");
   deck.addCard(jett);
   //create and add petra
-  const petra = new Character("Petra the Devious", "rdi9", "villain");
+  const petra = new Character("Petra the Devious", "rdi9", "villain", true);
   deck.addCard(petra);
   //create and add terci
   const terci = new Character("Doctor Terci", "rdi9", "hero");
@@ -84,7 +84,7 @@ const prepDeck = ()=>{
   const ygella = new Character("Beastsergeant Ygella", "rdi9", "hero");
   deck.addCard(ygella);
   //create and add evilPooky
-  const evilPooky = new Character("Evil Pooky", "allies", "villain");
+  const evilPooky = new Character("Evil Pooky", "allies", "villain", true);
   deck.addCard(evilPooky);
   //create and add halden
   const halden = new Character("Halden the Unhinged", "allies", "hero");
@@ -93,7 +93,7 @@ const prepDeck = ()=>{
   const natyli = new Character("Witchdoctor Natyli", "allies", "hero");
   deck.addCard(natyli);
   //create and add pooky
-  const pooky = new Character("Pooky the Vicious", "allies", "hero");
+  const pooky = new Character("Pooky the Vicious", "allies", "hero", true);
   deck.addCard(pooky);
   //create and add wrench
   const wrench = new Character("Wrench", "allies", "hero");
@@ -108,19 +108,19 @@ const prepDeck = ()=>{
   const adonis = new Character("The Magnificent Adonis, Bard of the Ages", "allies", "hero");
   deck.addCard(adonis);
   //create and add lichKing
-  const lichKing = new Character("The Lich King", "allies", "villain");
+  const lichKing = new Character("The Lich King", "allies", "villain", true);
   deck.addCard(lichKing);
   //create and add ohava
   const ohava = new Character("Ohava the Grand Cleric", "allies", "hero");
   deck.addCard(ohava);
   //create and add murgath
-  const murgath = new Character("Murgath the Blessed", "allies", "villain");
+  const murgath = new Character("Murgath the Blessed", "allies", "villain", true);
   deck.addCard(murgath);
   //create and add piper
   const piper = new Character("Piper, Eagle-Eyed Sniper", "allies", "hero");
   deck.addCard(piper);
   //create and add ripsnarl
-  const ripsnarl = new Character("Ripsnarl, Bad Dog", "allies", "villain");
+  const ripsnarl = new Character("Ripsnarl, Bad Dog", "allies", "villain", true);
   deck.addCard(ripsnarl);
   //create and add roxana
   const roxana = new Character("Roxana, Adventurous Chef", "smorgasbox", "hero");
@@ -141,7 +141,7 @@ const prepDeck = ()=>{
   const oozwald = new Character("Oozwald, \“Normal\” Adventurer", "rdi10", "hero");
   deck.addCard(oozwald);
   //create and add valeria
-  const valeria = new Character("Dark Priestess Valeria", "rdi10", "villain");
+  const valeria = new Character("Dark Priestess Valeria", "rdi10", "villain", true);
   deck.addCard(valeria);
 }
 

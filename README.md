@@ -71,3 +71,11 @@ Red Dragon Inn is a copyright of SlugFest Games West, LLC and as well as their c
 | 55 | merged | merged | main |
 | 56 | updated README to include optional filter | updated README | dev |
 | 57 | remembered i should mention that Slugfest are the creators of this wonderful game | mentioned copyright | dev |
+| 58 | merged | merged | main |
+| 59 | trying to get the checkboxes to line up the way i want | css safety commit | dev |
+| 60 | added an attribute for if the character has a boss deck | added hasBossDeck attribute | dev |
+| 61 | found another filter bug. filteroptions array needs to be refreshed | need to refreshfilteroptions array | dev |
+| 62 | made and tested boss mode character dealt modification | boss mode | dev |
+| 63 | tinkering around trying to fix checkboxes placement | safety commit | dev |
+| 64 | went to replicate the refresh bug and it appears to be resolved, i did move declarations so that could have fixed it | bug squashed | dev |
+| 65 | chris helped me with the css. flex is not always the answer | css coming together | dev |

@@ -1,3 +1,6 @@
+/* * {
+    border: 2px solid blue;
+} */
 body {
     color: white;
     background-color: black;
@@ -17,10 +20,30 @@ h1 {
 }
 #filterOptions {
     display: flex;
-    flex-wrap: wrap;
+    flex-flow: row wrap;
     justify-content:space-evenly;
+    align-items: center;
+    gap: 16px;
+    
 }
-#sources {
+#board{
+    /* display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
-    justify-items: center;
+    align-items: center;
+    justify-content: space-evenly; */
+    /* gap: 16px; */
+    columns: 2;
+    column-gap: normal;
+    row-gap: normal;
+}
+
+.card{
+    flex: 1 1 100px;
+    border: 4px solid red;
+    flex-direction: row;
+    padding: 16px;
+    /* justify-self: center; */
+    /* align-self: center; */
+    max-width: 15rem;
 }
