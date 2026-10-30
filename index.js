@@ -47,11 +47,15 @@ inputEl.addEventListener('input', (event) => {
     
     const ottoMode = document.getElementById("ottoMode");
 
+    const bossOttoMode = document.getElementById("bossOttoMode");
+
     const filterOptions = [];
 
     let bossModeBool = false;
 
     let ottoModeBool = false;
+
+    let bossOttoModeBool = false;
 
     if(ottoMode.checked){
         ottoModeBool = true;
@@ -61,6 +65,9 @@ inputEl.addEventListener('input', (event) => {
         bossModeBool = true;
     }
     
+    if(bossOttoMode.checked){
+        bossOttoModeBool = true;
+    }
 
     if(hero.checked){
         filterOptions.push("hero");
@@ -116,7 +123,7 @@ inputEl.addEventListener('input', (event) => {
     // makes sure that the  of playercount was less than or equal to the number of possible characters
     if(playerCount <= deckSize && playerCount > 0){    
         // makes an obj out of the dealCharactersToPlayers function when we pass the number of players
-        const playerCharacterObj = dealCharactersToPlayers(playerCount, filterOptions, bossModeBool, ottoModeBool);
+        const playerCharacterObj = dealCharactersToPlayers(playerCount, filterOptions, bossModeBool, ottoModeBool, bossOttoModeBool);
         let bossMarked = false;
         //for each players
         console.log(ottoModeBool);
@@ -137,10 +144,15 @@ inputEl.addEventListener('input', (event) => {
             }
             
         }
+        console.log("ottoModeBool is " + ottoModeBool)
         if(ottoModeBool && playerCount === 2 && !!playerCharacterObj.otto){
                 displayStr += playerCharacterObj.otto;
-        }else if(ottoModeBool && playerCount < 2 || playerCount > 2){
+        }else if(ottoModeBool && (playerCount < 2 || playerCount > 2)){
             displayStr = "Otto olnly works for two players";
+        }
+
+        if(bossOttoModeBool && !!playerCharacterObj.bossOtto){
+            displayStr += playerCharacterObj.bossOtto;
         }
     }else{
         displayStr = "Invalid entry";

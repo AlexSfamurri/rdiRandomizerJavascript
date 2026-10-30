@@ -3,10 +3,12 @@ import { Character } from "./classes/characterClass.js";
 
 const deck = new Deck();
 const ottoDeck = new Deck();
+const bossOttoDeck = new Deck();
 //loads the cards to an empty array stored in deck
 const prepDeck = ()=>{
   deck.emptyDeck();
   ottoDeck.emptyDeck();
+  bossOttoDeck.emptyDeck();
   //create and add kaylin
   const kaylin = new Character("Kaylin the Renegade", "rdi3", "hero");
   deck.addCard(kaylin);
@@ -165,7 +167,21 @@ const prepDeck = ()=>{
 
   const spelunkerOtto = new Character("Spelunker", "otto", "hero");
   ottoDeck.addCard(spelunkerOtto);
+
+  //boss otto deck prep
+  //battlebot, gamblotron, mechaLich, abominomaton
+  const battlebot = new Character("Battlebot", "bossOtto", "villain");
+  bossOttoDeck.addCard(battlebot);
+
+  const gamblotron = new Character("Gamblotron", "bossOtto", "villain");
+  bossOttoDeck.addCard(gamblotron);
+
+  const mechaLich = new Character("Mecha-Lich", "bossOtto", "villain");
+  bossOttoDeck.addCard(mechaLich);
+
+  const abominomaton = new Character("Abominomaton", "bossOtto", "villain");
+  bossOttoDeck.addCard(abominomaton);
 }
 
 
-export { prepDeck, deck, ottoDeck };
+export { prepDeck, deck, ottoDeck, bossOttoDeck };

@@ -1,4 +1,4 @@
-import { prepDeck, deck, ottoDeck } from "./deckPrep.js";
+import { prepDeck, deck, ottoDeck, bossOttoDeck } from "./deckPrep.js";
 import { filterDeck } from "./filterDeck.js"
 import { bossMode } from "./bossBattleDeal.js";
 import { getRandomInt } from"./classes/deckClass.js";
@@ -8,7 +8,7 @@ prepDeck();
 let numOfCharacters = deck.getDeck().length;
 
 // takes the number of players and deals out characters
-const dealCharactersToPlayers = (numPlayers, filterChoices=[], bossBattleMode = false, ottoMode = false)=>{
+const dealCharactersToPlayers = (numPlayers, filterChoices=[], bossBattleMode = false, ottoMode = false, bossOttoMode = false)=>{
     //makes sure we are working with a fresh deck
     prepDeck();
     //create a boss deck of character cards that have boss decks
@@ -39,7 +39,10 @@ const dealCharactersToPlayers = (numPlayers, filterChoices=[], bossBattleMode = 
     deck.emptyDeck();
     //returns the obj that has playerN keys and randomcharacter values
     
-    
+    if(bossOttoMode){
+        const bossOttoStr = "|| BOSS OTTO FACTIONS: " + bossOttoDeck.deal().getName() + " and " + bossOttoDeck.deal().getName() + " ||"
+        playersPairings.bossOtto = bossOttoStr;
+    }
 
     if(bossBattleMode){
         let randomKey = "Player" + Number(getRandomInt(numPlayers) + 1);
