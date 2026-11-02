@@ -1,6 +1,5 @@
 import { dealCharactersToPlayers, numOfCharacters, deck } from "./dealToPlayers.js";
 
-
 // stores the html id value for input
 const inputIDValue = "playerCountInput";
 //stores the html id value for where we will display
@@ -44,8 +43,32 @@ inputEl.addEventListener('input', (event) => {
     //smorgasbox checkbox
     const smorgasbox = document.getElementById("smorgasbox");
 
+    const bossMode = document.getElementById("bossMode");
+    
+    const ottoMode = document.getElementById("ottoMode");
+
+    const bossOttoMode = document.getElementById("bossOttoMode");
+
     const filterOptions = [];
+
     let bossModeBool = false;
+
+    let ottoModeBool = false;
+
+    let bossOttoModeBool = false;
+
+    if(ottoMode.checked){
+        ottoModeBool = true;
+    }
+
+    if(bossMode.checked){
+        bossModeBool = true;
+    }
+    
+    if(bossOttoMode.checked){
+        bossOttoModeBool = true;
+    }
+
     if(hero.checked){
         filterOptions.push("hero");
     }
@@ -100,13 +123,36 @@ inputEl.addEventListener('input', (event) => {
     // makes sure that the  of playercount was less than or equal to the number of possible characters
     if(playerCount <= deckSize && playerCount > 0){    
         // makes an obj out of the dealCharactersToPlayers function when we pass the number of players
-        const playerCharacterObj = dealCharactersToPlayers(playerCount, filterOptions, bossModeBool);
+        const playerCharacterObj = dealCharactersToPlayers(playerCount, filterOptions, bossModeBool, ottoModeBool, bossOttoModeBool);
+        let bossMarked = false;
         //for each players
+        console.log(ottoModeBool);
+        console.log(playerCount);
+        console.log(playerCharacterObj.otto);
         for(let i = 0; i < playerCount; i++){
             //create the PlayerN key
             let playerKey = "Player" + Number(i + 1);
-            //adds the playerkey as well as the name of the character
-            displayStr += "\n \n | " + playerKey + " " + playerCharacterObj[playerKey].getName() + " | \n \n ";
+            // console.log(playerCharacterObj.bossKey
+            
+            if(bossModeBool && !bossMarked && playerKey === playerCharacterObj.bossKey){
+                
+                bossMarked = true;
+                displayStr += "\n \n | BOSS " + playerKey + " " + playerCharacterObj[playerKey].getName() + " BOSS | \n \n ";
+            }else{
+                //adds the playerkey as well as the name of the character
+                displayStr += "\n \n | " + playerKey + " " + playerCharacterObj[playerKey].getName() + " | \n \n ";
+            }
+            
+        }
+        console.log("ottoModeBool is " + ottoModeBool)
+        if(ottoModeBool && playerCount === 2 && !!playerCharacterObj.otto){
+                displayStr += playerCharacterObj.otto;
+        }else if(ottoModeBool && (playerCount < 2 || playerCount > 2)){
+            displayStr = "Otto olnly works for two players";
+        }
+
+        if(bossOttoModeBool && !!playerCharacterObj.bossOtto){
+            displayStr += playerCharacterObj.bossOtto;
         }
     }else{
         displayStr = "Invalid entry";
